@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STT Bandung</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="bg-image">
+        <nav class="navbar navbar-expand-lg navbar-custom">
+            <a class="navbar-brand" href="https://sttbandung.ac.id/">Sekolah Tinggi Teknologi Bandung </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#welcome" id="welcomeTab">Welcome</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#login" id="loginTab">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#register" id="registerTab">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#main" id="mainTab">Main Page</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#detail" id="detailTab">Detail</a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+    </div>
+    <div class="container content">
+        <div id="welcome" class="tabcontent active" style="float: left; width: 70%;">
+            <h2>Welcome to STT Bandung</h2>
+            <p>
+                Selamat datang di STT Bandung, tempat yang mempersembahkan pengalaman belajar terbaik.
+                Nikmati lingkungan belajar yang dinamis, fokus pada pengembangan keterampilan teknologi tinggi.
+                Kami memiliki fakultas berkualitas tinggi dan kurikulum sesuai dengan tuntutan industri saat ini.
+                Di STT Bandung, kami mendukung pertumbuhan pribadi dan profesional Anda.
+            </p>        
+            <p>Please <a href="#detailTab" class="login-link">explore more</a> about STT Bandung.</p>    
+        </div>     
+        <div id="login" class="tabcontent" style="display: none;">
+            <h2>Login</h2>
+            <form id="loginForm" action="login.php" method="POST">
+                <div class="form-group">
+                    <label for="username">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="muadzalch">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="password" placeholder="password123">
+                </div>
+                <button id="loginButton" class="btn btn-primary">Login</button>
+            </form>
+        </div>
+        <div id="register" class="tabcontent" style="display: none;">
+            <h2>Register</h2>
+            <form id="registerForm" action="register.php" method="POST">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="text" class="form-control" id="phone" placeholder="Enter phone number">
+                </div>
+                <div class="form-group">
+                    <label for="reg_username">Username</label>
+                    <input type="text" class="form-control" id="reg_username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="reg_password">Password</label>
+                    <input type="password" class="form-control" id="reg_password" placeholder="Password">
+                </div>
+                <button id="registerButton" class="btn btn-primary">Register</button>
+            </form>  
+        </div>
+        <div id="main" class="tabcontent" style="display: none;">
+            <div class="col-md-12">
+                <h2>Sekolah Tinggi Teknologi Bandung</h2>
+                <p>Sekolah Tinggi Teknologi Bandung (STT Bandung) adalah sebuah perguruan tinggi yang didirikan pada
+                    tahun
+                    1991 dan berlokasi di Bandung, Indonesia. STT Bandung berdiri berdasarkan prakarsa alumni dari
+                    Institut
+                    Teknologi Bandung (ITB) [2]. Perguruan tinggi ini memiliki visi yang kuat dalam bidang teknologi dan
+                    memiliki beberapa program studi, termasuk Teknik Industri, Teknik Informatika, Desain Komunikasi
+                    Visual,
+                    dan Bisnis Digital </p>
+                <p>STT Bandung mendorong keteguhan dan kejujuran dalam bidang pendidikan, khususnya teknologi [5].
+                    Selain
+                    itu, mahasiswanya berasal dari berbagai daerah dan aktif dalam organisasi mahasiswa untuk
+                    pengembangan
+                    potensi diri [6]. Perguruan tinggi ini memiliki sejarah yang kuat dan berusaha untuk memajukan
+                    bidang
+                    teknologi di Indonesia.</p>
+            </div>
+            <div class="row">
+                <div class="col-md-3">
+                    <h2>Teknik Industri</h2>
+                    <p> Program studi Teknik Industri di STT Bandung fokus pada pengembangan pengetahuan dan
+                        keterampilan dalam
+                        bidang manajemen produksi, perencanaan produksi, dan manajemen rantai pasokan. Mahasiswa dalam
+                        jurusan
+                        ini mempelajari cara meningkatkan efisiensi produksi dan mengoptimalkan proses bisnis.</p>
+
+                </div>
+                <div class="col-md-3">
+                    <h2>Teknik Informatika</h2>
+                    <p>Jurusan Teknik Informatika STT Bandung membekali mahasiswa dengan pemahaman mendalam tentang
+                        pemrograman,
+                        pengembangan perangkat lunak, jaringan komputer, dan teknologi informasi. Ini adalah program
+                        studi yang
+                        relevan dengan perkembangan teknologi informasi modern.</p>
+                </div>
+                <div class="col-md-3">
+                    <h2>Desain Komunikasi Visual</h2>
+                    <p>Program studi ini fokus pada kreativitas dan desain grafis. Mahasiswa mempelajari seni visual,
+                        desain
+                        berbagai media, dan komunikasi visual untuk menghasilkan pesan yang efektif melalui gambar dan
+                        desain.
+                    </p>
+
+                </div>
+                <div class="col-md-3">
+                    <h2>Bisnis Digital</h2>
+                    <p>Jurusan Bisnis Digital di STT Bandung mempersiapkan mahasiswa untuk dunia bisnis digital yang
+                        berkembang
+                        pesat. Mereka memahami konsep bisnis online, e-commerce, pemasaran digital, dan strategi bisnis
+                        untuk
+                        lingkungan digital.</p>
+                </div>  
+            </div>
+        </div>
+            <div id="detail" class="tabcontent" style="display: none;">
+                <h2>Sekolah Tinggi Teknologi Bandung</h2>  
+                <div class="detail-content">
+                    <div class="detail-header">
+                        <div class="header-info">
+                            <p>Didirikan pada tahun 1991</p>
+                            <p>Akreditasi: A</p>
+                        </div>
+                    </div>
+                    <div class="about-stt">
+                        <h3>Tentang STT Bandung</h3>
+                        <p>
+                            Sekolah Tinggi Teknologi Bandung (STT Bandung) adalah sebuah perguruan tinggi yang berkomitmen
+                            untuk memberikan pendidikan berkualitas di bidang teknologi. Dengan fokus pada inovasi dan
+                            pengembangan keterampilan, STT Bandung telah menjadi pusat pendidikan yang diakui.
+                        </p>
+                    </div>
+                    <div class="programs">
+                        <h3>Program Studi Unggulan</h3>
+                        <ul>
+                            <li>Teknik Industri</li>
+                            <li>Teknik Informatika</li>
+                            <li>Desain Komunikasi Visual</li>
+                            <li>Bisnis Digital</li>
+                        </ul>
+                    </div>
+                    <div class="additional-info">
+                        <h3>Informasi Tambahan</h3>
+                        <ul>
+                            <li>Jumlah Mahasiswa: 5,000+</li>
+                            <li>Alamat: Jl. Soekarno Hatta No.378, Kb. Lega, Kec. Bojongloa Kidul, Kota Bandung, Jawa Barat 40235</li>
+                            <li>Website: <a href="https://sttbandung.ac.id/" target="_blank">sttbandung.ac.id</a></li>
+                            <li>Email: info@sttbandung.ac.id</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+    </div> 
+    <footer class="footer">
+        <p>@Copyright by 21552011370_Muhammad Muadz Al Chairi_221PA</p>          
+    </footer>     
+            <script src="script.js"></script>           
+</body>
+</html>
